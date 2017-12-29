@@ -125,3 +125,43 @@ function wp_ajax_ajaxlogin(){
 	echo json_encode($return);
 	die();
 }
+
+function wp_ajax_ajaxsignup(){
+	global $wpdb;
+
+	$return = array();
+	$fname = $wpdb->escape($_REQUEST['firstname']);  
+	$lname = $wpdb->escape($_REQUEST['lastname']);  
+	$username = $wpdb->escape($_REQUEST['username']);  
+    $password = $wpdb->escape($_REQUEST['password']);  
+	$records = explode("@",$username);
+	$user_login = $records[0];
+	
+	$info = array();  
+	$info['user_nicename'] = $user_login;
+	$info['nickname'] = $user_login;
+	$info['display_name'] = $user_login;
+	$info['first_name'] = $fname;
+	$info['last_name'] = $lname;
+	$info['user_login'] = $user_login;
+    $info['user_pass'] = $password;
+	$info['user_email'] = $username;
+
+	// Register the user
+	$user_register = wp_insert_user($info);
+	if ( is_wp_error($user_register) ){	
+		$error  = $user_register->get_error_codes()	;
+		
+		if(in_array('empty_user_login', $error))
+			echo json_encode(array('loggedin'=>false, 'message'=>__($user_register->get_error_message('empty_user_login'))));
+		elseif(in_array('existing_user_login',$error))
+			echo json_encode(array('loggedin'=>false, 'message'=>__('This username is already registered.')));
+		elseif(in_array('existing_user_email',$error))
+			echo json_encode(array('loggedin'=>false, 'message'=>__('This email address is already registered.')));
+	} else {
+		// auth_user_login($info['nickname'], $info['user_pass'], 'Registration');
+		echo json_encode(array('loggedin'=>true));
+	}
+
+	die();
+}
