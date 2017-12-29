@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nProjects package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: nProjects 1.0.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-09 10:23-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/classes/nprojects-admin.php:45
+msgid "Select Media Files"
+msgstr ""
+
+#: src/classes/nprojects-admin.php:46
+msgid "Insert Selected File(s)"
+msgstr ""
+
+#: src/classes/nprojects-admin.php:57
+msgid "Project Gallery"
+msgstr ""
+
+#: src/classes/nprojects-admin.php:93 src/classes/nprojects.php:81
+msgid "Edit"
+msgstr ""
+
+#: src/classes/nprojects-admin.php:94
+msgid "Remove"
+msgstr ""
+
+#: src/classes/nprojects-admin.php:101
+msgid "There was no added media files."
+msgstr ""
+
+#: src/classes/nprojects-admin.php:102 src/classes/nprojects-admin.php:105
+msgid "Insert Media File(s)"
+msgstr ""
+
+#: src/classes/nprojects-shortcode.php:41 src/classes/nprojects.php:77
+msgid "Projects"
+msgstr ""
+
+#: src/classes/nprojects-shortcode.php:43
+msgid "LineThemes"
+msgstr ""
+
+#: src/classes/nprojects-shortcode.php:147
+msgid "All"
+msgstr ""
+
+#: src/classes/nprojects-shortcode.php:178
+msgid "Quick View"
+msgstr ""
+
+#: src/classes/nprojects.php:78
+msgid "Project"
+msgstr ""
+
+#: src/classes/nprojects.php:79
+msgid "Add New"
+msgstr ""
+
+#: src/classes/nprojects.php:80
+msgid "Add New Project"
+msgstr ""
+
+#: src/classes/nprojects.php:82
+msgid "Edit Project"
+msgstr ""
+
+#: src/classes/nprojects.php:83
+msgid "New Project"
+msgstr ""
+
+#: src/classes/nprojects.php:84
+msgid "All Projects"
+msgstr ""
+
+#: src/classes/nprojects.php:85 src/classes/nprojects.php:86
+msgid "View Project"
+msgstr ""
+
+#: src/classes/nprojects.php:87
+msgid "Search Projects"
+msgstr ""
+
+#: src/classes/nprojects.php:88
+msgid "No Project Found"
+msgstr ""
+
+#: src/classes/nprojects.php:89
+msgid "No Project Found In Trash"
+msgstr ""
+
+#: src/classes/nprojects.php:92
+msgid "The project post type"
+msgstr ""
+
+#: src/classes/nprojects.php:130
+msgctxt "taxonomy general name"
+msgid "Project Categories"
+msgstr ""
+
+#: src/classes/nprojects.php:131
+msgctxt "taxonomy singular name"
+msgid "Project Category"
+msgstr ""
+
+#: src/classes/nprojects.php:132
+msgid "Search Categories"
+msgstr ""
+
+#: src/classes/nprojects.php:133
+msgid "All Categories"
+msgstr ""
+
+#: src/classes/nprojects.php:134
+msgid "Parent Category"
+msgstr ""
+
+#: src/classes/nprojects.php:135
+msgid "Parent Category:"
+msgstr ""
+
+#: src/classes/nprojects.php:136
+msgid "Edit Category"
+msgstr ""
+
+#: src/classes/nprojects.php:137
+msgid "Update Category"
+msgstr ""
+
+#: src/classes/nprojects.php:138
+msgid "Add New Category"
+msgstr ""
+
+#: src/classes/nprojects.php:139
+msgid "New Category Name"
+msgstr ""
+
+#: src/classes/nprojects.php:140
+msgid "Categories"
+msgstr ""
+
+#: src/classes/nprojects.php:158
+msgctxt "taxonomy general name"
+msgid "Project Tags"
+msgstr ""
+
+#: src/classes/nprojects.php:159
+msgctxt "taxonomy singular name"
+msgid "Project Tag"
+msgstr ""
+
+#: src/classes/nprojects.php:160
+msgid "Search Tags"
+msgstr ""
+
+#: src/classes/nprojects.php:161
+msgid "All Tags"
+msgstr ""
+
+#: src/classes/nprojects.php:162
+msgid "Parent Tag"
+msgstr ""
+
+#: src/classes/nprojects.php:163
+msgid "Parent Tag:"
+msgstr ""
+
+#: src/classes/nprojects.php:164
+msgid "Edit Tag"
+msgstr ""
+
+#: src/classes/nprojects.php:165
+msgid "Update Tag"
+msgstr ""
+
+#: src/classes/nprojects.php:166
+msgid "Add New Tag"
+msgstr ""
+
+#: src/classes/nprojects.php:167
+msgid "New Tag Name"
+msgstr ""
+
+#: src/classes/nprojects.php:168
+msgid "Tags"
+msgstr ""

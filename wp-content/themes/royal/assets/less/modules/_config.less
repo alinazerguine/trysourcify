@@ -1,0 +1,82 @@
+/*============================================================ 
+                        CSS OVERVIEWS
+                1. GENERAL
+                2. LAYOUT
+                3. HEADER
+                4. CONTENT
+                	4.1. Content Header
+                	4.1. Content Bottom
+                5. WIDGET
+                6. FOOTER
+                7. OTHER
+                	7.1. Comments
+                	7.2. Page Navigation
+                	7.3. Page Search
+                	7.4. Blank Page
+                	7.5. Error404                           	
+============================================================*/
+
+
+@grid-columns: 12;
+@grid-gutter: 30px;
+@primary: #ea205a;
+@accent: #142537;
+@yellow: #fff200;
+@black: #000;
+@white: #fff;
+@grey: #ccc;
+@blue: #007aff;
+@green: #a0ce4e;
+@red: #e74c3c;
+@dark: #333;
+@light: #ddd;
+@orange: #f6ba70;
+@lightblue: #58c5c0;
+@darkblue: #42555c;
+
+
+
+.rounded (@radius: 4px) {
+	-webkit-border-radius: @radius;
+ 	   -moz-border-radius: @radius;
+	    -ms-border-radius: @radius;
+	     -o-border-radius: @radius;
+	        border-radius: @radius;
+}
+.transition (@transition: all 0.2s ease-in-out 0s)  {
+	-webkit-transition: @transition;
+	   -moz-transition: @transition;
+	    -ms-transition: @transition;
+	     -o-transition: @transition;
+	        transition: @transition;
+}
+.box-shadow(@arguments:0 10px 20px 0 rgba(0, 0, 0, 0.1)) {
+    -webkit-box-shadow: @arguments;
+       -moz-box-shadow: @arguments;
+        -ms-box-shadow: @arguments;
+         -o-box-shadow: @arguments;
+            box-shadow: @arguments;
+}
+.opacity(@opacity: 0.5) {
+	-webkit-opacity: @opacity;
+	 -khtml-opacity: @opacity;
+       -moz-opacity: @opacity;
+            opacity: @opacity;
+            @opperc: @opacity * 100;
+            -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+                filter: ~"alpha(opacity=@{opperc})";
+}
+.delay (@delay: 60ms) {
+	-webkit-transition-delay: @delay;
+	   -moz-transition-delay: @delay;
+	    -ms-transition-delay: @delay;
+	     -o-transition-delay: @delay;
+	        transition-delay: @delay;
+}
+.duration (@duration: 250ms) {
+	-webkit-transition-duration: @duration;
+	   -moz-transition-duration: @duration;
+	    -ms-transition-duration: @duration;
+	     -o-transition-duration: @duration;
+	        transition-duration: @duration;
+}
