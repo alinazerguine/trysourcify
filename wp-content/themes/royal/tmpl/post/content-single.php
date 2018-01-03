@@ -9,15 +9,26 @@ $featured_background_types = (array) royal_option( 'header__titlebar__background
 $current_post_type         = royal_current_post_type();
 $show_featured_image       = ! in_array( $current_post_type, $featured_background_types ) && has_post_thumbnail();
 ?>
-
+<style>
+	.site-header-classic.header-transparent{
+		position: relative!important;
+		background-image: url(http://localhost/wordpress/wp-content/uploads/2017/12/bg.png?id=545) !important;
+		background-position: center !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+	}
+	.post-custom{
+		margin-top: 50px;
+	}
+</style>
 	<div id="post-<?php the_ID() ?>" <?php post_class( 'post' ) ?>>
-		<div class="post-inner">
-			<?php if ( $show_featured_image ): ?>
+		<div class="post-inner post-custom">
+			<?php //if ( $show_featured_image ): ?>
 				<div class="post-thumbnail">
 					<?php the_post_thumbnail( 'post-thumbnail' ) ?>
 				</div>
 				<!-- /.post-thumbnail -->
-			<?php endif ?>
+			<?php //endif ?>
 
 			<div class="post-header">
 				<div class="post-avatar">

@@ -6,6 +6,19 @@
 defined( 'ABSPATH' ) or die();
 ?>
 
+<style>
+	.site-header-classic.header-transparent{
+		position: relative!important;
+		background-image: url(http://localhost/wordpress/wp-content/uploads/2017/12/bg.png?id=545) !important;
+		background-position: center !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		margin-bottom: 100px;
+	}
+	.post-custom{
+		margin-top: 50px;
+	}
+</style>
 	<div id="post-<?php the_ID() ?>" <?php post_class( 'post' ) ?>>
 		<div class="post-inner">
 			<?php get_template_part( 'tmpl/post/content-featured', get_post_format() ) ?>
@@ -18,8 +31,8 @@ defined( 'ABSPATH' ) or die();
 					</h6>
 					<?php get_template_part( 'tmpl/post/content-title' ) ?>
 				</div>
-				
-				<div class="post-content">
+				 
+				<div class="post-content asdf">
 					<?php
 						royal_the_content( false );
 						wp_link_pages( array(

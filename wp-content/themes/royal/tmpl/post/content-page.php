@@ -7,7 +7,7 @@ defined( 'ABSPATH' ) or die();
 ?>
 
 	<div id="post-<?php the_ID() ?>" <?php post_class( 'post' ) ?>>
-		<div class="post-inner">
+		<div class="post-inner asdf">
 			<?php if ( has_post_thumbnail() ): ?>
 			<div class="post-thumbnail">
 				<?php the_post_thumbnail( 'post-thumbnail' ) ?>
