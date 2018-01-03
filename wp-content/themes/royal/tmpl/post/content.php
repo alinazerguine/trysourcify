@@ -32,7 +32,7 @@ defined( 'ABSPATH' ) or die();
 					<?php get_template_part( 'tmpl/post/content-title' ) ?>
 				</div>
 				 
-				<div class="post-content asdf">
+				<div class="post-content">
 					<?php
 						royal_the_content( false );
 						wp_link_pages( array(
